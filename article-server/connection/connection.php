@@ -4,9 +4,9 @@ header("Access-Control-Allow-Methods: POST, GET, DELETE");
 header("Content-Type: application/json");
 header("Access-Control-Allow-Headers: Content-Type");
 
-$host = 'localhost';
+$host = '15.188.77.241'; // localhost
 $user = 'root';
-$pass = '';
+$pass = 'Hassan1234'; //
 $db_name = 'articles_db';
 
 $db_connect = new mysqli($host, $user, $pass, $db_name);
