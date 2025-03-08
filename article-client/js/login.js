@@ -11,8 +11,8 @@ async function login() {
 
 
     const response = await axios.post(
-        "http://localhost:8080/articles/article-server/apis/v1/login.php",
-        // "http://15.188.77.241/article-server/user/v1/login.php",
+        // "http://localhost:8080/articles/article-server/apis/v1/login.php",
+        "http://15.188.77.241/article-server/user/v1/login.php",
         form
     );
 
