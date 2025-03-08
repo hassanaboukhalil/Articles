@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up - FAQs project</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-secondary">
+    <section class="container login_signup_section">
+        <form class="bg-primary body2">
+            <h2 class="h2 text-white">Sign Up</h2>
+            <input class="body1" type="text" name="first_name" id="first_name" placeholder="First Name" required>
+            <input class="body1" type="email" name="email" id="email" placeholder="Email" required>
+            <input class="body1" type="password" name="" id="pass" placeholder="Password" required>
+            <input type="button" class="bg-black text-white body1" value="Sign up" onclick="signup()">
+            </input>
+            <p class="body2 text-white">Don't have account ? <a class="text-secondary" href="./index.html">Login</a></p>
+        </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/signup.js"></script>
+</body>
+
+</html>
