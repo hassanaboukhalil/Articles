@@ -5,10 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - FAQs project</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body class="bg-secondary">
 
+    <section class="container login_signup_section">
+        <form class="bg-primary body2" action="">
+            <h2 class="h2 text-white">Login</h2>
+            <input class="body1" type="email" name="" id="email" placeholder="Email">
+            <input class="body1" type="password" name="" id="pass" placeholder="Password">
+            <input type="button" class="bg-black text-white body1" value="Login" onclick="login()">
+            </input>
+            <p class="body2 text-white">Don't have account ? <a class="text-secondary" href="./signup.html">Sign up</a>
+            </p>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
