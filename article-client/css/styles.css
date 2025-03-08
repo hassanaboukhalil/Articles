@@ -155,13 +155,3 @@ input{
     width: 100%;
     padding: 0.5em 0.7em;
 }
-
-.div-inputs{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.div-inputs input{
-    width: 45%;
-}

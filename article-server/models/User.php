@@ -89,6 +89,24 @@ class User
     // }
 
 
+    public static function createUser($db_connect, $full_name, $email, $pass)
+    {
+        $query = $db_connect->prepare("insert into users(full_name, email, pass) values (?, ?, ?)");
+        $query->bind_param("sss", $full_name, $email, $pass);
+        $query->execute();
+
+        if ($query->affected_rows > 0) {
+            $user = [
+                "id" => $db_connect->insert_id,
+                "full_name" => $full_name,
+                "email" => $email
+            ];
+            return $user;
+        } else {
+            throw new Exception("Failed to create user.");
+        }
+    }
+
 
     public static function getUser($db_connect, $email, $password)
     {
