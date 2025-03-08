@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  /* font sizes */
+  --h1: 4rem;
+  --h2: 3rem;
+  --h3: 2rem;
+  --body1: 1.5rem;
+  --body2: 1.2rem;
+  --body3: 1rem;
+  --body4: 0.75rem;
+
+
+  /* others */
+  --container-padding-x: 1rem;
+}
+
+
+
+/*=========== colors  ============*/
+.bg-primary {
+    background-color: #5235E8;
+}
+
+.bg-secondary{
+    background-color: #E5F3FF;
+}
+
+.bg-tertiary{
+    background-color: #92E3A9;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-black{
+    background-color: #1D1D1D;
+}
+
+.text-primary {
+    color: #5235E8;
+}
+
+.text-secondary{
+    color: #92E3A9;
+}
+
+.text-tertiary{
+    color: #9094A9;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-black{
+    color: #1D1D1D;
+}
+/*=========== end of colors  ============*/
+
+
+/*=========== base ============*/
+@media (width > 992px) {
+  :root {
+    /* font sizes */
+    --h1: 4rem;
+    --h2: 3rem;
+    --h3: 2rem;
+    --body1: 1.5rem;
+    --body2: 1.2rem;
+    --body3: 1rem;
+    --body4: 0.75rem;
+
+
+    /* others */
+    --container-padding-x: 16rem;
+  }
+}
+
+.h1{
+    font-size: var(--h1);
+}
+
+.h2{
+    font-size: var(--h2);
+}
+
+.h3{
+    font-size: var(--h3);
+}
+
+.body1{
+    font-size: var(--body1);
+}
+
+.body2{
+    font-size: var(--body2);
+}
+
+.body3{
+    font-size: var(--body3);
+}
+
+.body4{
+    font-size: var(--body4);
+}
+
+.container {
+  width: 100%;
+  padding-right: var(--container-padding-x);
+  padding-left: var(--container-padding-x);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn{
+  border-radius: 8px;
+}
+
+.btn > a {
+    padding: 0.5em 0.7em;
+    display: flex;
+    gap: 0.2em;
+    text-decoration: none;
+}
+/*=========== end of base ============*/
+
+
+
+/*=========== login page and signup ============*/
+.login_signup_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 1rem
+}
+
+input{
+    width: 100%;
+    padding: 0.5em 0.7em;
+}
+
+.div-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-inputs input{
+    width: 45%;
+}
