@@ -18,8 +18,8 @@ async function signup() {
 
 
     const response = await axios.post(
-        "http://localhost:8080/articles/article-server/apis/v1/signup.php",
-        // "http://15.188.77.241/article-server/v1/signup.php",
+        // "http://localhost:8080/articles/article-server/apis/v1/signup.php",
+        "http://15.188.77.241/article-server/apis/v1/signup.php",
         form
     );
 
