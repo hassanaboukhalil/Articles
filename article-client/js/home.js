@@ -11,6 +11,7 @@ async function get_questions() {
     console.log(response.data)
     if (response.data.message == 'success') {
         questions = response.data.questions
+        questions = questions.reverse();
         filtered_questions = [...questions];
         insert_FAQs(questions);
     } else {
@@ -57,4 +58,16 @@ function filter_questions(element){
 function capitalize_first_letter(str){
     str = str[0].toUpperCase() + str.slice(1, str.length)
     return str;
+}
+
+
+function go_create_question_page(){
+    window.location.href = "./create-question.html";
+}
+
+
+function logout(){
+    localStorage.removeItem("id");
+    localStorage.removeItem("full_name");
+    window.location.href = "./index.html";
 }
