@@ -1,6 +1,6 @@
 <?php
 require("../../connection/connection.php");
-require('../../models/user.php');
+require('../../models/User.php');
 require('../../utils/functions.php');
 
 if (!issets_post_data("full_name", "email", "pass")) {
