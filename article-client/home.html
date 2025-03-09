@@ -9,14 +9,19 @@
 </head>
 
 <body class="bg-secondary" onload="get_questions()">
-    <section class="container section home-section1">
+    <section class="container section section1">
         <h1 class="h1">
             FAQs
         </h1>
+        <button class="bg-primary body2 text-white btn" onclick="logout()">
+            <a class="text-white">logout</a>
+        </button>
+    </section>
+    <section class="container section">
         <div class="div-search-and-create">
             <input class="body1" type="search" name="" id="search" placeholder="search"
                 onkeyup="filter_questions(this)">
-            <button class="bg-primary btn">
+            <button class="bg-primary btn" onclick="go_create_question_page()">
                 <img src="./assets/plus.svg" alt="plus icon">
             </button>
         </div>
