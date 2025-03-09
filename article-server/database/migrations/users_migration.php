@@ -1,6 +1,6 @@
 <?php
 
-function create_users_migrations($db_connect)
+function create_users_migration($db_connect)
 {
     $sql = "
         create table users(
@@ -17,7 +17,4 @@ function create_users_migrations($db_connect)
     if (!$result) {
         die("Error occured during the created of the users table: " . $db_connect->error);
     }
-
-
-    $db_connect->close();
 }

@@ -81,6 +81,9 @@
     --container-padding-x: 16rem;
   }
 }
+section{
+    margin-top: 6rem;
+}
 
 .h1{
     font-size: var(--h1);
@@ -128,6 +131,14 @@
     gap: 0.2em;
     text-decoration: none;
 }
+
+.btn > img{
+    padding: 0.5em 0.5em;
+}
+
+.font-bold{
+    font-weight: bold;
+}
 /*=========== end of base ============*/
 
 
@@ -153,5 +164,51 @@ form {
 
 input{
     width: 100%;
-    padding: 0.5em 0.7em;
+    padding: 0.5em 0.5em;
+}
+
+
+
+
+
+/*=========== Home Page ============*/
+.home-section1{
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.div-search-and-create{
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    margin-top: 3rem;
+    height: 3rem;
+}
+
+.div-search-and-create > button{
+    width: 3rem;
+
+}
+
+.div-search-and-create > input[type="search"]{
+    width: 70%;
+
+}
+
+.FAQs-questions-answers{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 3rem;
+    margin-bottom: 6rem;
+
+}
+
+.FAQs-questions-answers > .FAQs-grid-item{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
