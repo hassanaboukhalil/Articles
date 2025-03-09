@@ -22,7 +22,7 @@ class Question
     }
     public static function getQuestions($db_connect)
     {
-        $query = $db_connect->prepare("SELECT * FROM Questions");
+        $query = $db_connect->prepare("SELECT * FROM questions");
         $query->execute();
 
         $result = $query->get_result();

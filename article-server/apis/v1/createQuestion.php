@@ -1,6 +1,6 @@
 <?php
 require("../../connection/connection.php");
-require('../../models/question.php');
+require('../../models/Question.php');
 require('../../utils/functions.php');
 
 if (!issets_post_data("id", "question", "answer")) {
