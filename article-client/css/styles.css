@@ -21,6 +21,8 @@
 
 
 
+
+
 /*=========== colors  ============*/
 .bg-primary {
     background-color: #5235E8;
@@ -64,20 +66,12 @@
 /*=========== end of colors  ============*/
 
 
+
+
+
 /*=========== base ============*/
 @media (width > 992px) {
   :root {
-    /* font sizes */
-    --h1: 4rem;
-    --h2: 3rem;
-    --h3: 2rem;
-    --body1: 1.5rem;
-    --body2: 1.2rem;
-    --body3: 1rem;
-    --body4: 0.75rem;
-
-
-    /* others */
     --container-padding-x: 16rem;
   }
 }
@@ -134,12 +128,19 @@ section{
 
 .btn > img{
     padding: 0.5em 0.5em;
+    cursor: pointer;
 }
 
 .font-bold{
     font-weight: bold;
 }
+
+input[type="button"]{
+    cursor: pointer;
+}
 /*=========== end of base ============*/
+
+
 
 
 
@@ -162,7 +163,7 @@ form {
     padding: 3rem 1rem
 }
 
-input{
+input, textarea{
     width: 100%;
     padding: 0.5em 0.5em;
 }
@@ -172,9 +173,10 @@ input{
 
 
 /*=========== Home Page ============*/
-.home-section1{
-    /* display: flex;
-    justify-content: space-between; */
+.section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
 
 .div-search-and-create{
@@ -211,4 +213,36 @@ input{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+
+
+
+
+/*=========== Create Question Page ============*/
+.div-btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.create-FAQ-form{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: start;
+}
+
+.create-FAQ-form .input-group{
+    width: 100%;
+}
+
+.create-FAQ-form textarea{
+    margin-top: 2rem;
+    resize: vertical;
+    min-height: 8rem;
+    width: 100%;
+}
+
+.create-FAQ-section{
+    margin-bottom: 4rem;
 }
