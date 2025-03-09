@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create question - FAQs project</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-secondary">
+    <section class="container section section1">
+        <h1 class="h1">
+            Create FAQ
+        </h1>
+        <button class="bg-primary body2 text-white btn" onclick="logout()">
+            <a class="text-white">logout</a>
+        </button>
+    </section>
+    <section class="container section create-FAQ-section">
+        <form class="bg-primary body2 create-FAQ-form" action="">
+            <div class="input-group">
+                <label class="text-white h3" for="question">Enter The Question: </label>
+                <textarea class="body1 big-input-text" type="text" name="" id="question"
+                    placeholder="question"></textarea>
+            </div>
+            <div class="input-group">
+                <label class="text-white h3" for="question">Enter The Answer: </label>
+                <textarea class="body1 big-input-text" type="text" name="" id="answer" placeholder="answer"></textarea>
+            </div>
+            <div class="div-btns">
+                <!-- <button class="bg-white body2 text-black btn" onclick="create_question()">
+                    <a>Submit</a>
+                </button> -->
+                <input type="button" class="bg-white body2 text-black btn" value="Submit" onclick="create_question()">
+                <button class="bg-white body2 text-black btn">
+                    <a href="./home.html">Cancel</a>
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/create-question.js"></script>
+</body>
+
+</html>
