@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home - FAQs project</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-secondary" onload="get_questions()">
+    <section class="container section home-section1">
+        <h1 class="h1">
+            FAQs
+        </h1>
+        <div class="div-search-and-create">
+            <input class="body1" type="search" name="" id="search" placeholder="search"
+                onkeyup="filter_questions(this)">
+            <button class="bg-primary btn">
+                <img src="./assets/plus.svg" alt="plus icon">
+            </button>
+        </div>
+    </section>
+    <section class="container section FAQs-questions-answers" id="FAQs_grid">
+        <!-- <div class="bg-primary FAQs-grid-item">
+            <p class="h3 text-secondary font-bold">question?</p>
+            <p class="h3 text-white">answer</p>
+        </div> -->
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>
