@@ -4,8 +4,8 @@ let FAQs_grid = document.getElementById("FAQs_grid");
 
 async function get_questions() {
     const response = await axios.get(
-        "http://localhost:8080/articles/article-server/apis/v1/getQuestions.php",
-        // "http://15.188.77.241/article-server/apis/v1/login.php"
+        // "http://localhost:8080/articles/article-server/apis/v1/getQuestions.php",
+        "http://15.188.77.241/article-server/apis/v1/getQuestions.php"
     );
 
     console.log(response.data)
