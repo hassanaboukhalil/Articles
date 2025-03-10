@@ -2,6 +2,9 @@ const email = document.getElementById("email");
 const pass = document.getElementById("pass");
 
 
+let server = "localhost:8080"; // http://15.188.77.241
+let url = server + "/article-server/apis/v1/login.php";
+
 
 async function login() {
     const form = new FormData();
@@ -11,8 +14,7 @@ async function login() {
 
 
     const response = await axios.post(
-        // "http://localhost:8080/articles/article-server/apis/v1/login.php",
-        "http://15.188.77.241/article-server/apis/v1/login.php",
+        url,
         form
     );
 

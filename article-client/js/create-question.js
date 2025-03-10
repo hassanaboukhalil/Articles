@@ -2,6 +2,9 @@ const question = document.getElementById("question")
 const answer = document.getElementById("answer")
 
 
+let server = "localhost:8080"; // http://15.188.77.241
+let url = server + "/article-server/apis/v1/createQuestion.php";
+
 
 async function create_question(){
     const form = new FormData();
@@ -13,8 +16,7 @@ async function create_question(){
 
 
     const response = await axios.post(
-        // "http://localhost:8080/articles/article-server/apis/v1/createQuestion.php",
-        "http://15.188.77.241/article-server/apis/v1/createQuestion.php",
+        url,
         form
     );
 

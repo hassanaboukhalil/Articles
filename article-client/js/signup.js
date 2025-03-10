@@ -3,6 +3,9 @@ const email = document.getElementById("email");
 const pass = document.getElementById("pass");
 
 
+let server = "localhost:8080"; // http://15.188.77.241
+let url = server + "/articles/article-server/apis/v1/signup.php";
+
 
 async function signup() {
     if(!validate_password(pass.value)){
@@ -18,8 +21,7 @@ async function signup() {
 
 
     const response = await axios.post(
-        // "http://localhost:8080/articles/article-server/apis/v1/signup.php",
-        "http://15.188.77.241/article-server/apis/v1/signup.php",
+        url,
         form
     );
 

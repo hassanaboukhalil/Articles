@@ -2,13 +2,16 @@ let questions;
 let filtered_questions;
 let FAQs_grid = document.getElementById("FAQs_grid");
 
+
+let server = "localhost:8080"; // http://15.188.77.241
+let url = server + "/articles/article-server/apis/v1/getQuestions.php";
+
 async function get_questions() {
     const response = await axios.get(
-        // "http://localhost:8080/articles/article-server/apis/v1/getQuestions.php",
-        "http://15.188.77.241/article-server/apis/v1/getQuestions.php"
+        url
     );
 
-    console.log(response.data)
+    // console.log(response.data)
     if (response.data.message == 'success') {
         questions = response.data.questions
         questions = questions.reverse();
