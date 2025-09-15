@@ -1,29 +1,25 @@
 const email = document.getElementById("email");
 const pass = document.getElementById("pass");
 
+let protocol = "http://";
 
 let server = "localhost:8080"; // http://15.188.77.241
-let url = server + "/article-server/apis/v1/login.php";
-
+let url = protocol + server + "/articles/article-server/apis/v1/login.php";
 
 async function login() {
-    const form = new FormData();
+  const form = new FormData();
 
-    form.append("email", email.value);
-    form.append("pass", pass.value);
+  form.append("email", email.value);
+  form.append("pass", pass.value);
 
+  const response = await axios.post(url, form);
 
-    const response = await axios.post(
-        url,
-        form
-    );
-
-    console.log(response.data)
-    if (response.data[0].message == 'success') {
-        localStorage.setItem("id", response.data[0].user.id);
-        localStorage.setItem("full_name", response.data[0].user.full_name);
-        window.location.href = "./home.html";
-    } else {
-        alert("Login failed: " + response.data[0].message);
-    }
+  console.log(response.data);
+  if (response.data[0].message == "success") {
+    localStorage.setItem("id", response.data[0].user.id);
+    localStorage.setItem("full_name", response.data[0].user.full_name);
+    window.location.href = "./home.html";
+  } else {
+    alert("Login failed: " + response.data[0].message);
+  }
 }
