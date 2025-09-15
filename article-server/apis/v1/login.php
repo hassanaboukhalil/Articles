@@ -19,6 +19,8 @@ $password = $_POST["pass"];
 try {
     // $user = (new User($db_connect, $email))->getUser();
     $message = '';
+    // $user = new User($db_connect, $email);
+    // $user = $user->getUser($user->getEmail());
     $user = User::getUser($db_connect, $email, $password);
 
     if ($user && (hash('sha256', $password) == $user['pass'])) {
