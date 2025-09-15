@@ -16,7 +16,10 @@ $email = $_POST["email"];
 $pass = hash('sha256', $_POST["pass"]);
 
 try {
+    // $user = new User($db_connect, $email, $pass, $full_name);
+    // $user->createUser($user . $db_connect, $user . $full_name, $user . $email, $user . $pass);
     $user = User::createUser($db_connect, $full_name, $email, $pass);
+
 
     if ($user) {
         $message = 'success';
