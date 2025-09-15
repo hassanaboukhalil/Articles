@@ -6,7 +6,7 @@ header("Access-Control-Allow-Headers: Content-Type");
 
 $host = 'localhost'; // 15.188.77.241
 $user = 'root';
-$pass = 'gr44t3tseg34'; //  Hassan1234
+$pass = ''; //  Hassan1234 gr44t3tseg34
 $db_name = 'articles_db';
 
 $db_connect = new mysqli($host, $user, $pass, $db_name);
